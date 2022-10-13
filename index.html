@@ -4,8 +4,72 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap"
+            rel="stylesheet"
+        />
         <title>Form Validation</title>
     </head>
-    <body></body>
+    <body>
+        <div class="aside">
+            <img
+                src="./images/sewing-machine.svg"
+                alt="image logo"
+                class="imageLogo"
+            />
+            <div class="logo">NeedlePoint</div>
+            <h5 class="logo-footer">
+                Photo by
+                <a href="https://unsplash.com/@liacastelli">@liacastelli</a> on
+                <a href="https://unsplash.com/">Unsplash</a>
+            </h5>
+        </div>
+        <div class="main">
+            <div class="header">
+                <h1 class="advice">This is not a real online service!</h1>
+                <h1 class="title">
+                    Have you ever thought that you could organize your clothes
+                    confection even better?
+                </h1>
+                <h2 class="title">
+                    If you are a dressmaker and want to take your business to
+                    the next level, this is the right place for you! Sign up now
+                    to get started.
+                </h2>
+            </div>
+            <div class="form">
+                <h2 class="form-headler">Let's Start!</h2>
+                <form id="form">
+                    <label for="fistname">first name</label>
+                    <input type="text" name="firstname" id="firstname" />
+
+                    <label for="lastname">last name</label>
+                    <input type="text" name="lastname" id="lastname" />
+
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" />
+
+                    <label for="phone">phone number</label>
+                    <input type="tel" name="phone" id="tel" />
+
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password" />
+
+                    <label for="confirm-password">confirm password</label>
+                    <input
+                        type="password"
+                        name="confirm-password"
+                        id="confirm-password"
+                    />
+                </form>
+            </div>
+            <div class="bottom">
+                <button form="form">Create Account</button>
+                <h3>Alredy have an account? <a href="#">Log in</a></h3>
+            </div>
+        </div>
+    </body>
 </html>
