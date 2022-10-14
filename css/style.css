@@ -2,15 +2,116 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
-  background-color: #272727;
+  min-height: 100vh;
   display: flex;
-  padding: 5vw 10vw;
+  flex: 1;
+}
+body a {
+  color: #a52a53;
 }
 
 .aside {
-  background-image: url(./images/background.jpg);
-  background-size: contain;
+  background: url(../images/background.jpg);
+  background-size: cover;
+  width: 40vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aside .logo {
+  background-color: rgba(4, 4, 4, 0.6901960784);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+.aside .logo h1,
+.aside .logo span {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: white;
+}
+.aside .logo span {
+  color: #ff17dc;
+  color: #ff17dc;
+}
+.aside .logo-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: rgba(4, 4, 4, 0.6901960784);
+  text-align: center;
+  color: white;
+}
+
+.main {
+  padding: 1rem 0;
+  background-color: #fff5fb;
+}
+.main .advice {
+  margin: 2rem 1rem 1rem 1rem;
+  font-size: 1rem;
+  color: rgb(255, 0, 0);
+}
+.main h1.title {
+  margin: 2rem 10rem 0.5rem 1rem;
+}
+.main h2.title {
+  margin: 0.5rem 10rem 3rem 1rem;
+}
+.main .form {
+  background-color: white;
+  padding: 2rem 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.403);
+}
+.main .form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .form form .ask {
+  width: 50%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main .form form .ask label {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #313131;
+  font-size: 0.8rem;
+  margin: 1.2rem 0rem 0rem 0.5rem;
+}
+.main .form form .ask input {
+  width: 16rem;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+.main .form form .ask input:invalid {
+  border: 2px solid red;
+}
+.main .form form .ask input:invalid:focus {
+  outline: none;
+}
+.main .form form .ask input:invalid + label {
+  color: red;
+}
+.main .bottom {
+  margin: 1rem 0rem 0rem 1rem;
+  font-size: 0.9rem;
+}
+.main button {
+  background-color: #c6245a;
+  padding: 0.6rem 1.6rem;
+  color: #fff5fb;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */

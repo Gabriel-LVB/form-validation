@@ -15,15 +15,15 @@
     </head>
     <body>
         <div class="aside">
-            <img
-                src="./images/sewing-machine.svg"
-                alt="image logo"
-                class="imageLogo"
-            />
-            <div class="logo">NeedlePoint</div>
+            <div class="logo">
+                <h1><span>Needle</span>Point</h1>
+            </div>
             <h5 class="logo-footer">
                 Photo by
-                <a href="https://unsplash.com/@liacastelli">@liacastelli</a> on
+                <a href="https://unsplash.com/@juniorferreir_"
+                    >@juniorferreir_</a
+                >
+                on
                 <a href="https://unsplash.com/">Unsplash</a>
             </h5>
         </div>
@@ -41,29 +41,57 @@
                 </h2>
             </div>
             <div class="form">
-                <h2 class="form-headler">Let's Start!</h2>
+                <h2 class="form-header">Let's Start!</h2>
                 <form id="form">
-                    <label for="fistname">first name</label>
-                    <input type="text" name="firstname" id="firstname" />
+                    <div class="ask">
+                        <input
+                            type="text"
+                            name="firstname"
+                            id="firstname"
+                            required
+                        />
+                        <label for="fistname">first name</label>
+                    </div>
 
-                    <label for="lastname">last name</label>
-                    <input type="text" name="lastname" id="lastname" />
+                    <div class="ask">
+                        <input
+                            type="text"
+                            name="lastname"
+                            id="lastname"
+                            required
+                        />
+                        <label for="lastname">last name</label>
+                    </div>
 
-                    <label for="email">email</label>
-                    <input type="email" name="email" id="email" />
+                    <div class="ask">
+                        <input type="email" name="email" id="email" required />
+                        <label for="email">email</label>
+                    </div>
 
-                    <label for="phone">phone number</label>
-                    <input type="tel" name="phone" id="tel" />
+                    <div class="ask">
+                        <input type="tel" name="phone" id="tel" required />
+                        <label for="phone">phone number</label>
+                    </div>
 
-                    <label for="password">password</label>
-                    <input type="password" name="password" id="password" />
+                    <div class="ask">
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            required
+                        />
+                        <label for="password">password</label>
+                    </div>
 
-                    <label for="confirm-password">confirm password</label>
-                    <input
-                        type="password"
-                        name="confirm-password"
-                        id="confirm-password"
-                    />
+                    <div class="ask">
+                        <input
+                            type="password"
+                            name="confirm-password"
+                            id="confirm-password"
+                            required
+                        />
+                        <label for="confirm-password">confirm password</label>
+                    </div>
                 </form>
             </div>
             <div class="bottom">
@@ -71,5 +99,7 @@
                 <h3>Alredy have an account? <a href="#">Log in</a></h3>
             </div>
         </div>
+
+        <script src="./main.js"></script>
     </body>
 </html>
